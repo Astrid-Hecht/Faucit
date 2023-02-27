@@ -10,28 +10,28 @@
 
 :earth_americas: [Learning Goals](#learning-goals)
 <br>
-:earth_americas: [Deployment](#deployment)
-<br>
-:earth_americas: [Repositories](#repositories)
+:earth_americas: [Setup Instructions](#setup_instructions)
 <br>
 :earth_americas: [Planning](#planning)
 <br>
-:earth_americas: [Endpoints](#endpoints)
-<br>
-:earth_americas: [Tech Stack](#tech-stack)
-<br>
-:earth_americas: [Contributors](#contributors)
+:earth_americas: [Deployment](#deployment)
 <br>
 
 ### Learning Goals
 - Rapidly develop and deploy an app with real world applicability
-- Experiment with frontend exact-location accessing techniques
-- Dip a toe into the intersection of JS and Ruby
+- Experiment with frontend exact-location accessing techniques (to do)
+- Dip a toe into the intersection of JS and Ruby (to do)
 
-
-### Deployment
-   * [Check out the live app here!]() (not currently deployed)
+### Setup Instructions
+  * Fork and clone this repo
+  * Run `bundle install`
+  * Run `rails db:create`
+  * Run `rails s`
+  * And you're good to go! The landing page shoud be `http://localhost:3000/`
 
 ### Planning
    * [My planning miro board](https://miro.com/app/board/uXjVPijQ6Q4=/?share_link_id=945135448264)
+
+### Deployment
+   * [Check out the live app here!]() (not currently deployed)
 
