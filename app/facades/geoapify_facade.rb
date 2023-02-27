@@ -1,7 +1,7 @@
 class GeoapifyFacade
   # Target field arrays for each API. As place APIs are addedin the future,
   # they will have their own hash element to allow target_field_filter to format uniformly
-  TARGET_FIELDS = %i[name formatted categories place_id lon lat distance].freeze
+  TARGET_FIELDS = %i[name formatted categories id lon lat distance].freeze
 
   def self.get_nearby(query, categories = ['amenity'], page = 0, search_radius = 2500)
     coords = get_coords(query)
@@ -34,6 +34,7 @@ class GeoapifyFacade
   def self.flattener(raw_hits)
     raw_hits.map do |raw_hit|
       raw_hit[:properties][:name] = 'No name' unless raw_hit[:properties][:name].present?
+      raw_hit[:properties][:id] = raw_hit[:place_id]
       raw_hit[:properties]
     end
   end
