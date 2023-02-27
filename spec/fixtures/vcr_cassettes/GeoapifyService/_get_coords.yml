@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geoapify.com/v1/geocode/search?apiKey=places_api_key&format=json&limit=1&text=1303%20Pearl%20St,%20Boulder,%20CO%2080302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Feb 2023 20:13:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-iplatitude, cf-iplongitude,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cf-pseudo-ipv4, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry,
+        x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Content-Disposition:
+      - inline; filename=response.json
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0Vp180yUucGqqIxOFjB51PN1g66JgGzJUiVAm%2Bg3LmuLLK8Yum4Of0Bc0DqgpGmOLFPuOArKpMA4PtDtNuDwmIOwM11c0uBKsKJWQKfPRVp7k4W%2F8jdjLLoVuYoL6w3%2BtQ0a8Hx7WfzMcEYVjiU%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7a0394f25ba21f3c-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXN1bHRzIjpbeyJkYXRhc291cmNlIjp7InNvdXJjZW5hbWUiOiJvcGVuc3RyZWV0bWFwIiwiYXR0cmlidXRpb24iOiLCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycyIsImxpY2Vuc2UiOiJPcGVuIERhdGFiYXNlIExpY2Vuc2UiLCJ1cmwiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQifSwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyIsInN0YXRlIjoiQ29sb3JhZG8iLCJjb3VudHkiOiJCb3VsZGVyIENvdW50eSIsImNpdHkiOiJCb3VsZGVyIiwicG9zdGNvZGUiOiI4MDMwMiIsInN1YnVyYiI6IlBlYXJsIFN0cmVldCBNYWxsIiwic3RyZWV0IjoiUGVhcmwgU3RyZWV0IiwiaG91c2VudW1iZXIiOiIxMzAzIiwibG9uIjotMTA1LjI3ODU0MDM0NjkzODc3LCJsYXQiOjQwLjAxODI4ODMwNjEyMjQ1LCJzdGF0ZV9jb2RlIjoiQ08iLCJmb3JtYXR0ZWQiOiIxMzAzIFBlYXJsIFN0cmVldCwgQm91bGRlciwgQ08gODAzMDIsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImFkZHJlc3NfbGluZTEiOiIxMzAzIFBlYXJsIFN0cmVldCIsImFkZHJlc3NfbGluZTIiOiJCb3VsZGVyLCBDTyA4MDMwMiwgVW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhIiwidGltZXpvbmUiOnsibmFtZSI6IkFtZXJpY2EvRGVudmVyIiwib2Zmc2V0X1NURCI6Ii0wNzowMCIsIm9mZnNldF9TVERfc2Vjb25kcyI6LTI1MjAwLCJvZmZzZXRfRFNUIjoiLTA2OjAwIiwib2Zmc2V0X0RTVF9zZWNvbmRzIjotMjE2MDAsImFiYnJldmlhdGlvbl9TVEQiOiJNU1QiLCJhYmJyZXZpYXRpb25fRFNUIjoiTURUIn0sInJlc3VsdF90eXBlIjoiYnVpbGRpbmciLCJyYW5rIjp7ImltcG9ydGFuY2UiOi0wLjgzOTk5OTk5OTk5OTk5OTksInBvcHVsYXJpdHkiOjUuMzc1NDg4Njc1MTg1Nzk1LCJjb25maWRlbmNlIjoxLCJjb25maWRlbmNlX2NpdHlfbGV2ZWwiOjEsImNvbmZpZGVuY2Vfc3RyZWV0X2xldmVsIjoxLCJtYXRjaF90eXBlIjoiZnVsbF9tYXRjaCJ9LCJwbGFjZV9pZCI6IjUxZmMyZGU0OWFkMzUxNWFjMDU5ZmI1ODZlNDU1NzAyNDQ0MGYwMDEwMmY5MDFkMDg5MGYxZjAwMDAwMDAwYzAwMjAzIiwiYmJveCI6eyJsb24xIjotMTA1LjI3ODU5MDM0Njk0LCJsYXQxIjo0MC4wMTgyMzgzMDYxMjIsImxvbjIiOi0xMDUuMjc4NDkwMzQ2OTQsImxhdDIiOjQwLjAxODMzODMwNjEyMn19XSwicXVlcnkiOnsidGV4dCI6IjEzMDMgUGVhcmwgU3QsIEJvdWxkZXIsIENPIDgwMzAyIiwicGFyc2VkIjp7ImhvdXNlbnVtYmVyIjoiMTMwMyIsInN0cmVldCI6InBlYXJsIHN0IiwicG9zdGNvZGUiOiI4MDMwMiIsImNpdHkiOiJib3VsZGVyIiwic3RhdGUiOiJjbyIsImV4cGVjdGVkX3R5cGUiOiJidWlsZGluZyJ9fX0=
+  recorded_at: Mon, 27 Feb 2023 20:13:35 GMT
+recorded_with: VCR 6.1.0
