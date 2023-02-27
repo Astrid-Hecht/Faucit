@@ -1,15 +1,28 @@
 <table id='location-table' class='center'>
   <tr>
     <th>Distance</th>
+    <th>Name</th>
     <th>Address</th>
+    <th>Categories</th>
+    <th>Coordinates</th>
   </tr>
   <%@results.each do |location|%>
   <tr class='location' id='loc-<%=location[:id]%>'>
     <td class='distance'>
-      <%= location[:distance] %> meters
+      <%= location[:distance].to_i %> meters
+    </td>
+    <td class='name'>
+      <%= location[:name] %>
     </td>
     <td class='address'>
       <%= location[:formatted] %>
+    </td>
+    <td class='categories'>
+      <%= location[:categories].to_s %>
+    </td>
+    </td>
+    <td class='coordinates'>
+      <a href="https://www.google.com/maps/place/<%=location[:lat]%>,<%=location[:lon]%>"><%= location[:lat] %>, <%= location[:lon] %></a>
     </td>
   </tr>
   <%end%>
