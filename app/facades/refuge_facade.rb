@@ -28,7 +28,7 @@ class RefugeFacade
   def self.digest(raw_hits)
     raw_hits.map do |raw_hit|
       raw_hit[:name] = 'No name' unless raw_hit[:name].present?
-      raw_hit[:formatted] = "#{raw_hit[:street]}, #{raw_hit[:city]}, #{raw_hit[:state]}"
+      raw_hit[:formatted] = "#{raw_hit[:street].strip}, #{raw_hit[:city].strip}, #{raw_hit[:state].strip}"
       raw_hit[:categories] = ["unisex.#{raw_hit[:unisex]}", "accessible.#{raw_hit[:accessible]}"]
       raw_hit[:distance] = (raw_hit[:distance] * 1609.34).round(3)
       raw_hit[:ratings] = [raw_hit[:upvote], raw_hit[:downvote]]
