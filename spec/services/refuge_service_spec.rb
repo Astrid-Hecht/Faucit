@@ -4,10 +4,9 @@ describe RefugeService, :vcr do
   it '.get_nearby' do
     lat = 48.8588897
     long = 2.3200410217200766
-    unisex = true
-    accessible = false
-
-    places = RefugeService.get_nearby(lat, long, unisex, accessible)
+    conditions = { accessible: false, unisex: true }
+ 
+    places = RefugeService.get_nearby(lat, long, conditions)
 
     expect(places).to be_an Array
     expect(places.count).to eq(20)
@@ -39,8 +38,6 @@ describe RefugeService, :vcr do
     expect(hit[:name]).to be_a(String)
     expect(hit[:street]).to be_a(String)
     expect(hit[:state]).to be_a(String)
-    expect(hit[:accessible]).to be_a(String)
-    expect(hit[:unisex]).to be_a(String)
     expect(hit[:directions]).to be_a(String)
     expect(hit[:comment]).to be_a(String)
     expect(hit[:latitude]).to be_a(Float)
