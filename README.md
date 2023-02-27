@@ -24,16 +24,14 @@
 <br>
 
 ### Learning Goals
-- Rapidly develop and deploy an app with real worldf applicability
-- Experiment with frontend exact-location acessing techniques
+- Rapidly develop and deploy an app with real world applicability
+- Experiment with frontend exact-location accessing techniques
 - Dip a toe into the intersection of JS and Ruby
 
 
 ### Deployment
-   * [Check out the live app here!]()
+   * [Check out the live app here!]() (not currently deployed)
 
 ### Planning
-   * [Our planning miro board](https://miro.com/app/board/uXjVPsXFTmY=/)
-   * [Daily standup form](https://forms.gle/o8uT9dCMNmHPEj1n7)
-   * [MVP Proposal](https://docs.google.com/document/d/1zh159QSWUgpQ51-qvm1RADbU4RuLf_LI1CyZz_HZR9k/edit)
+   * [My planning miro board](https://miro.com/app/board/uXjVPijQ6Q4=/?share_link_id=945135448264)
 
