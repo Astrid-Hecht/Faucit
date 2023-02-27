@@ -5,7 +5,7 @@
 
 ---
 ### Project Description
-   Welcome to my entry in the inaugural Turing Hackathon: Faucit. In today's age of hyper dense urban sprawl and hostile architecture, a an enjopyable day out can quickly turn into a crisis if nature decides to call. This app allows a user to quickly and easily resolve that crisis with a simple press of a button. After allowing locastion access, Faucit will pull up a list of any nearby, publicly accessible 'facilities' and route a user to them upon selection. The developer is also keenly aware of the barriers certain people might experience in the search for a public restroom, so there are selecctions to filter results for gender accessibility, ADA compliance, and specific proximity. It is our sincere hope that Faucit can bring a measure of confidence and security everyone, especially those with concerns about things commonly taken for granted.
+   Welcome to my entry in the inaugural Turing Hackathon: Faucit. In today's age of hyper dense urban sprawl and hostile architecture, a an enjopyable day out can quickly turn into a crisis if nature decides to call. This app allows a user to quickly and easily resolve that crisis with a simple press of a button. After allowing locastion access, Faucit will pull up a list of any nearby, publicly accessible 'facilities' and route a user to them upon selection. There are also selections to filter results for gender accessibility, ADA compliance, and to include water fountains.
 <br>
 
 :earth_americas: [Learning Goals](#learning-goals)
