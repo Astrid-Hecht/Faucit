@@ -2,10 +2,12 @@ require 'rails_helper'
 
 describe RefugeService, :vcr do
   it '.get_nearby' do
-    city_info = { name: 'Paris', latitude: 48.8588897, longitude: 2.3200410217200766, country: 'FR',
-                  state: 'Ile-de-France' }
+    lat = 48.8588897
+    long = 2.3200410217200766
+    unisex = true
+    accessible = false
 
-    places = RefugeService.get_nearby(lat, long, unisex, accessibility)
+    places = RefugeService.get_nearby(lat, long, unisex, accessible)
 
     expect(places).to be_an Array
     expect(places.count).to eq(20)
