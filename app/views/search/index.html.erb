@@ -1,0 +1,16 @@
+<table id='location-table' class='center'>
+  <tr>
+    <th>Distance</th>
+    <th>Address</th>
+  </tr>
+  <%@results.each do |location|%>
+  <tr class='location' id='loc-<%=location[:id]%>'>
+    <td class='distance'>
+      <%= location[:distance] %> meters
+    </td>
+    <td class='address'>
+      <%= location[:formatted] %>
+    </td>
+  </tr>
+  <%end%>
+</table>
