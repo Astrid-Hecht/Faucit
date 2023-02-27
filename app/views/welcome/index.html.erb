@@ -1,0 +1,20 @@
+<%= form_with url: "/search", method: :get, local: true do |f| %>
+    <%= f.label :address, "Address:" %>
+    <%= f.search_field :address, value: "Where are you?" %>
+    <br>
+    <h4 style='margin-bottom:5px'> Options </h4>
+
+      <span style='margin-inline: 20px'></span>
+        <%= f.check_box :fountains  %>
+        <%= f.label :fountains, "Include water fountians" %>
+        <span style='margin-inline: 40px'> OR </span>
+        <%= f.check_box :unisex  %>
+        <%= f.label :unisex, "Gender neutral" %>
+        <%= f.check_box :ada %>
+        <%= f.label :ada, "ADA Compliant" %>
+      </span>
+
+    <br>
+    <br>
+    <%= f.submit "Search" %>
+    <%end%>
